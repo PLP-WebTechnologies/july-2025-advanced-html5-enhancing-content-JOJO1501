@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Form with Content Showcase</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced HTML5 Form with Content Showcase</h1>
+      <p>
+        A comprehensive demonstration of lists, tables, media elements, and
+        advanced HTML5 form validation
+      </p>
+
+      <!-- Navigation -->
+      <nav aria-label="Page sections">
+        <ul>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Section 1: Lists Demonstration -->
+      <section id="lists">
+        <h2>Lists Demonstration</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>HTML5 Forms</li>
+          <li>CSS3 Styling</li>
+          <li>JavaScript Validation</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Plan your form</li>
+          <li>Add HTML elements</li>
+          <li>Test validation</li>
+        </ol>
+
+        <h3>Definition List</h3>
+        <dl>
+          <dt>HTML5</dt>
+          <dd>Latest markup language version</dd>
+          <dt>Accessibility</dt>
+          <dd>Design for all users</dd>
+        </dl>
+      </section>
+
+      <!-- Section 2: Tables Demonstration -->
+      <section id="tables">
+        <h2>Tables Demonstration</h2>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+          <caption>
+            Browser Support for HTML5 Features
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Browser</th>
+              <th scope="col">Version</th>
+              <th scope="col">HTML5 Forms</th>
+              <th scope="col">Validation</th>
+              <th scope="col">Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Chrome</th>
+              <td>118+</td>
+              <td>Excellent</td>
+              <td>Full Support</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <th scope="row">Firefox</th>
+              <td>119+</td>
+              <td>Excellent</td>
+              <td>Full Support</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <th scope="row">Safari</th>
+              <td>17+</td>
+              <td>Good</td>
+              <td>Partial Support</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <th scope="row">Edge</th>
+              <td>118+</td>
+              <td>Excellent</td>
+              <td>Full Support</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Average</th>
+              <td colspan="3">Overall browser support is excellent</td>
+              <td><strong>4.75/5</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Section 3: Media Elements -->
+      <section id="media">
+        <h2>Media Elements</h2>
+
+        <h3>Image</h3>
+        <figure>
+          <img
+            src="https://picsum.photos/400/200?random=1"
+            alt="Random sample image from Lorem Picsum showing natural landscape"
+            width="400"
+            height="200"
+          />
+          <figcaption>
+            Sample image demonstrating HTML5 img element with proper
+            accessibility attributes
+          </figcaption>
+        </figure>
+
+        <h3>Audio</h3>
+        <figure>
+          <audio
+            controls
+            aria-label="Audio player with bell ringing sound sample"
+          >
+            <source
+              src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+              type="audio/wav"
+            />
+            <source
+              src="https://archive.org/download/testmp3testfile/mpthreetest.mp3"
+              type="audio/mpeg"
+            />
+            <p>
+              Your browser does not support audio.
+              <a
+                href="https://archive.org/download/testmp3testfile/mpthreetest.mp3"
+                download
+                >Download the audio file</a
+              >
+              instead.
+            </p>
+          </audio>
+          <figcaption>
+            Audio element demonstrating HTML5 audio with multiple source formats
+          </figcaption>
+        </figure>
+
+        <h3>Video</h3>
+        <figure>
+          <video
+            controls
+            width="400"
+            poster="https://picsum.photos/400/300?random=2"
+            aria-label="Video player with sample video content"
+          >
+            <source
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4"
+              type="video/mp4"
+            />
+            <track
+              kind="captions"
+              src="#"
+              srclang="en"
+              label="English captions"
+            />
+            <p>
+              Your browser does not support video.
+              <a
+                href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                download
+                >Download the video file</a
+              >
+              instead.
+            </p>
+          </video>
+          <figcaption>
+            Video element demonstrating HTML5 video with multiple formats and
+            accessibility features
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Section 4: HTML5 Form -->
+      <section id="form">
+        <h2>Contact Form</h2>
+        <p id="form-description">
+          Please fill out this form to contact us. Fields marked with * are
+          required.
+        </p>
+
+        <form method="post" action="#" aria-describedby="form-description">
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+              <label for="first-name">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                required
+                minlength="2"
+                placeholder="Enter your first name"
+                aria-describedby="first-name-help"
+              />
+              <small id="first-name-help">Minimum 2 characters required</small>
+            </div>
+
+            <div>
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                required
+                minlength="2"
+                placeholder="Enter your last name"
+                aria-describedby="last-name-help"
+              />
+              <small id="last-name-help">Minimum 2 characters required</small>
+            </div>
+
+            <div>
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="your.email@example.com"
+                aria-describedby="email-help"
+              />
+              <small id="email-help"
+                >We'll never share your email address</small
+              >
+            </div>
+          </fieldset>
+
+          <!-- Additional Information -->
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9\-\+\s\(\)]{10,15}"
+                placeholder="+1 (555) 123-4567"
+                aria-describedby="phone-help"
+              />
+              <small id="phone-help">Optional: Include country code</small>
+            </div>
+
+            <div>
+              <label for="website">Website</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://your-website.com"
+                aria-describedby="website-help"
+              />
+              <small id="website-help"
+                >Optional: Your personal or professional website</small
+              >
+            </div>
+
+            <div>
+              <label for="experience">Years of Experience *</label>
+              <input
+                type="number"
+                id="experience"
+                name="experience"
+                required
+                min="0"
+                max="50"
+                aria-describedby="experience-help"
+              />
+              <small id="experience-help"
+                >Enter a number between 0 and 50</small
+              >
+            </div>
+
+            <div>
+              <label for="birth-date">Date of Birth</label>
+              <input
+                type="date"
+                id="birth-date"
+                name="birthDate"
+                aria-describedby="birth-date-help"
+              />
+              <small id="birth-date-help"
+                >Optional: Used for age verification if needed</small
+              >
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                maxlength="500"
+                placeholder="Your message..."
+                aria-describedby="message-help"
+              ></textarea>
+              <small id="message-help">Maximum 500 characters</small>
+            </div>
+          </fieldset>
+
+          <!-- Preferences -->
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <div>
+              <label>
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  value="yes"
+                  aria-describedby="newsletter-help"
+                />
+                Subscribe to newsletter
+              </label>
+              <small id="newsletter-help"
+                >Receive updates about our services</small
+              >
+            </div>
+
+            <fieldset>
+              <legend>Preferred Contact Method</legend>
+              <div>
+                <label>
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="email"
+                    checked
+                  />
+                  Contact by Email
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <input type="radio" name="contact-method" value="phone" />
+                  Contact by Phone
+                </label>
+              </div>
+            </fieldset>
+
+            <div>
+              <label for="skills">Skills</label>
+              <select id="skills" name="skills" aria-describedby="skills-help">
+                <option value="">Choose your skill</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+              </select>
+              <small id="skills-help"
+                >Select your primary technical skill</small
+              >
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit" aria-describedby="submit-help">
+              Submit Form
+            </button>
+            <small id="submit-help">Click to submit your information</small>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 HTML5 Form Demo - Accessible and compliant</p>
+    </footer>
+  </body>
+</html>
